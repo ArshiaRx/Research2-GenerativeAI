@@ -18,6 +18,11 @@ public class Node
         name = n;
     }
 
+    public virtual Status Process()
+    {
+        return Status.SUCCESS;
+    }
+    
     //Method to add child to the Node
     public void AddChild(Node n){
         children.Add(n);
