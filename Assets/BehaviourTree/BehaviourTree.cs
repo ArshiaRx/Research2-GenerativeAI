@@ -11,6 +11,11 @@ public class BehaviourTree : Node
     public BehaviourTree(string n){
         name = n;
     }
+
+    public override Status Process()
+    {
+        return children[currentChild].Process();
+    }
     
     struct NodeLevel 
     {
