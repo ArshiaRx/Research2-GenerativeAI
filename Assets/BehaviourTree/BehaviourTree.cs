@@ -1,0 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BehaviourTree : Node
+{
+    public BehaviourTree(){
+        name = "Tree";
+    }
+
+    public BehaviourTree(string n){
+        name = n;
+    }
+    
+    struct NodeLevel 
+    {
+        public int Level;
+        public Node node;
+    }
+
+    public void PrintTree()
+    {
+        string treePrintout = "";
+        Stack<NodeLevel> nodeStack = new Stack<NodeLevel>();
+        Node currentNode = this;
+        nodeStack.Push(new NodeLevel { Level = 0, node = currentNode } );
+
+        while (nodeStack.Count != 0){
+
+            NodeLevel nextNode = nodeStack.Pop();
+            treePrintout += new string ('-', nextNode.Level) + nextNode.node.name + "\n";
+            for (int i = nextNode.node.children.Count - 1; i >= 0; i--)
+            {
+                nodeStack.Push( new NodeLevel { Level = nextNode.Level + 1, node = nextNode.node.children[i] });
+            }
+        }
+        Debug.Log(treePrintout);
+    }
+}
