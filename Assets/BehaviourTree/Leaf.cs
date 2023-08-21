@@ -19,6 +19,6 @@ public class Leaf : Node
     {
         if (ProcessMethod != null)
             return ProcessMethod();
-        return Status.FAILUIRE;
+        return Status.FAILURE;
     }
 }
