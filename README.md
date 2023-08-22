@@ -25,4 +25,6 @@ Previously, I conducted my first research project about GitHub/GitHub Action and
 * Extended Action Methods
 * Conditions
 
-> Files can be find in Assets > BehaviourTree > files.cs 
+> Files can be find in Assets > BehaviourTree > files.cs
+>
+> Initial Package is provided in Zip files "S1101Resources.zip", "GalleryStarter.zip".
