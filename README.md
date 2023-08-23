@@ -28,3 +28,5 @@ Previously, I conducted my first research project about GitHub/GitHub Action and
 > Files can be find in Assets > BehaviourTree > files.cs
 >
 > Initial Package is provided in Zip files "S1101Resources.zip", "GalleryStarter.zip".
+
+![image](https://github.com/ArshiaRx/Research2-GenerativeAI/assets/82693306/084ea11d-7a2a-4bd2-bd06-ac335f14795b)
