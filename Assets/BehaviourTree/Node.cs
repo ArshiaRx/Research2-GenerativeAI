@@ -11,9 +11,10 @@ public class Node
     public int currentChild = 0;
     public string name;
 
-    //Constructors
+    //Constructor
     public Node() { }
 
+    //Constructor with one parameter
     public Node(string n){
         name = n;
     }
